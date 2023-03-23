@@ -10,11 +10,35 @@ public class Fish {
     public Fish(){
     }
 
+    public String getKindoffish() {
+        return kindoffish;
+    }
+
+    public void setKindoffish(String kindoffish) {
+        this.kindoffish = kindoffish;
+    }
+
+    public String getLength() {
+        return length;
+    }
+
+    public void setLength(String length) {
+        this.length = length;
+    }
+
+    public int getKg() {
+        return kg;
+    }
+
+    public void setKg(int kg) {
+        this.kg = kg;
+    }
+
     @Override
     public String toString() {
         return "Fish\n" +
-                "kindoffish: " + kindoffish +
-                "\nlength: " + length +
-                "\nkg: " + kg ;
+                "kindoffish: " + getKindoffish() +
+                "\nlength: " + getLength() +
+                "\nkg: " + getKg() ;
     }
 }

@@ -10,11 +10,36 @@ public class Parrot {
     public Parrot (){
     }
 
+    public String getName() {
+
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
     @Override
     public String toString() {
         return "Parrot\n" +
-                "name: " + name + '\'' +
-                "\ncolor: " + color +
-                "\nbreed: " + breed  ;
+                "name: " + getName() +
+                "\ncolor: " + getColor() +
+                "\nbreed: " + getBreed()  ;
     }
 }
